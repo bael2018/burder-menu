@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: url('../img/header_banner.jpg') center / cover;
+}
+
+header::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.check,
+.nav_block{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    outline: none;
+    z-index: 1034;
+    top: 25px;
+    cursor: pointer;
+}
+
+.check{
+    opacity: 0;
+}
+
+.nav_block{
+    pointer-events: none;
+    background: rgb(82, 82, 82);
+    transition: .3s;
+    line-height: 47px;
+    text-align: center;
+    box-shadow: 0 0 0 0px #9c27b0;
+    font-size: 36px;
+}
+
+.nav_bar1{
+    top: 38px;
+}
+
+.nav_bar2{
+    top: 48px;
+}
+
+.nav_bar3{
+    top: 58px;
+}
+
+.nav_bar{
+    width: 30px;
+    transition: .3s;
+    background: white;
+    height: 5px;
+    border-radius: 40px;
+    right: 41px;
+    z-index: 1450;
+    position: absolute;
+}
+
+.check:checked ~ .nav_bar3{
+    transform: rotate(33deg);
+    top: 48px;
+    height: 4px;
+}
+
+.check:checked ~ .nav_bar2{
+    transform: rotate(90deg);
+    top: 48px;
+    height: 4px;
+}
+
+.check:checked ~ .nav_bar1{
+    transform: rotate(-33deg);
+    top: 48px;
+    height: 4px;
+}
+
+.hide{
+    background: rgba(82, 82, 82, 0.8);
+    top: 0;
+    height: 100vh;
+    width: 17%;
+    right: -100%;
+    position: absolute;
+    transition: .3s;
+}
+
+.check:checked ~ .hide{
+    right: 0;
+}
+
+.check:checked ~ .nav_block{
+    background: white;
+}
+
+.check:checked ~ .nav_bar{
+    background: rgb(82, 82, 82);
+}
+
+.hide ul{
+    position: relative;
+    top: 120px;
+    list-style: none;
+    text-align: right;
+    margin-right: 35px;
+}
+
+.hide ul li{
+    margin-bottom: 25px;
+    position: relative;
+    padding: 5px 0;
+    padding-right: 3px;
+    cursor: pointer;
+}
+
+.hide ul li:hover::before{
+    width: 120%;
+    border-top-left-radius: 10px;
+}
+
+.hide ul li::before{
+    content: "";
+    top: 0;
+    right: -5px;
+    height: 100%;
+    background: rgb(185, 181, 181);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(255,255,255,1) 65%);
+    position: absolute;
+    width: 3%;
+    transition: .3s;
+}
+
+.hide ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .3s;
+    position: relative;
+}
+
+.hide ul li:hover a{
+    color: rgb(82, 82, 82);
+}
+
+.hide p{
+    color: white;
+    margin-top: 150px;
+    margin-left: auto;
+    width: 85%;
+    text-align: right;
+    margin-right: 30px;
+    line-height: 1.6;
+}
+
+.hide span{
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.hide span a{
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.header_title{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    left: 15%;
+    width: 70%;
+}
+
+.header_title h1{
+    color: white;
+    font-size: 55px;
+    margin-bottom: 0px;
+}
+
+.header_title p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.header_title a{
+    background: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 33px;
+    font-size: 17px;
+    transition: .3s;
+    border: 3px solid rgb(82, 82, 82);
+    color: rgb(82, 82, 82);
+}
+
+.header_title a:hover{
+    color: white;
+    background: rgb(82, 82, 82);
+}
+
+
+
+
+
+
+/* Adaptation */
+
+@media screen and (max-width:1200px){
+
+    .hide{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    .hide{
+        width: 35%;
+    }
+
+    .header_title h1{
+        font-size: 45px;
+    }
+}
+
+
+@media screen and (max-width:750px){
+
+    .hide{
+        width: 50%;
+        background: rgba(82, 82, 82, 1);
+        z-index: 100;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .hide{
+        width: 75%;
+    }
+
+    .header_title h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:380px){
+
+    .hide{
+        width: 100%;
+    }
+}
