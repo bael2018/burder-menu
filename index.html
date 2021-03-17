@@ -5,40 +5,420 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://kit.fontawesome.com/5c459b5eb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <input class="check" type="checkbox" name="" id="">
-        <div class="nav_block"></div>
-           <div class="nav_bar1 nav_bar"></div>
-           <div class="nav_bar2 nav_bar"></div>
-           <div class="nav_bar3 nav_bar"></div>
-        </div>
+        <div class="header_container"></div>
+            <input class="check" type="checkbox" name="" id="">
+            <div class="nav_block"></div>
+               <div class="nav_bar1 nav_bar"></div>
+               <div class="nav_bar2 nav_bar"></div>
+               <div class="nav_bar3 nav_bar"></div>
+            </div>
+    
+            <div class="hide">
+                <ul>
+                    <li><a href="#block1">Home</a></li>
+                    <li><a href="#block2">Skills</a></li>
+                    <li><a href="#block3">Works</a></li>
+                    <li><a href="#block4">Services</a></li>
+                    <li><a href="#block5">Contacts</a></li>
+                </ul>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, autem!</p>
+                <span>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </span>
+            </div>
+    
+            <div class="header_title" data-aos="zoom-in" data-aos-delay="100">
+                <h1>
+                    Welcome to my 
+                    <span>Website</span>
+                    <span>Creation</span>
+                </h1>
 
-        <div class="hide">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, autem!</p>
-            <span>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-telegram-plane"></i></a>
-            </span>
-        </div>
-
-        <div class="header_title">
-            <h1>Welcome to my Website</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo amet eligendi voluptates temporibus expedita explicabo.</p>
-            <a href="#">read more</a>
-        </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo amet eligendi voluptates temporibus expedita explicabo.</p>
+                <a href="#block1">read more</a>
+            </div>
     </header>
+
+    <main>
+        <section class="main_block1" id="block1">
+            <div class="block1_title">
+                <h4 data-aos="fade-up">Home</h4>
+                <p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, deleniti.</p>
+            </div>
+
+            <div class="block1_inside" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="block1_inner1_banner block1_inner1_banner1">
+                    <div class="block1_content">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius incidunt eaque inventore voluptas repellat laudantium illo magnam minus rem, sed iure ratione maxime accusantium modi. Sequi quasi numquam iusto non.</p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+
+                <div class="block1_inner1_banner block1_inner1_banner2">
+                    <div class="block1_content">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius incidunt eaque inventore voluptas repellat laudantium illo magnam minus rem, sed iure ratione maxime accusantium modi. Sequi quasi numquam iusto non.</p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+
+                <div class="block1_inner1_banner block1_inner1_banner3">
+                    <div class="block1_content">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius incidunt eaque inventore voluptas repellat laudantium illo magnam minus rem, sed iure ratione maxime accusantium modi. Sequi quasi numquam iusto non.</p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_block2" id="block2">
+            <div class="block1_title">
+                <h4 data-aos="fade-up">Skills</h4>
+                <p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, deleniti.</p>
+            </div>
+
+            <div class="block2_inside">
+                <div class="block2_inner block2_inner1" data-aos="flip-left">
+                    <i class="fas fa-camera-retro"></i>
+                    <h3>100%</h3>
+                </div>  
+                <div class="block2_inner block2_inner2" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-palette"></i>
+                    <h3>80%</h3>
+                </div>
+                <div class="block2_inner block2_inner3" data-aos="flip-left" data-aos-delay="600">
+                    <i class="fas fa-code"></i>
+                    <h3>70%</h3>
+                </div>
+            </div>
+        </section>
+
+        <div class="block1_title">
+            <h4 data-aos="fade-up">Works</h4>
+            <p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, deleniti.</p>
+        </div>
+
+        <section class="main_block3" id="block3">
+           <div class="block3_inside" data-aos="zoom-in">
+            <div class="block3_content" id="accordionExample">
+                <p class="middle">
+                    <a id="headingOne" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample`">
+                        Summer
+                    </a>
+                    <a id="headingTwo" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                        Winter
+                    </a>
+                    <a id="headingThree" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                        Autumn
+                    </a>
+                    <a id="headingFour" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                        Spring
+                    </a>
+                    <a id="headingFive" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                        Fancy
+                    </a>
+                    <a id="headingSix" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+                        Favorite
+                    </a>  
+                </p>
+
+                <div class="collapse show" id="collapseExample1" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="collapse_content">
+                        <div class="block3_wrapper">
+                            <div class="block3_wrapper_inner block3_wrapper_inner1">
+                                <a data-fancybox="gallery" href="img/sum1.jpg"><img src="img/sum1.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner2">
+                                <a data-fancybox="gallery" href="img/sum2.jpg"><img src="img/sum2.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner3">
+                                <a data-fancybox="gallery" href="img/sum3.jpg"><img src="img/sum3.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner4">
+                                <a data-fancybox="gallery" href="img/sum4.jpg"><img src="img/sum4.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner5">
+                                <a data-fancybox="gallery" href="img/sum5.jpg"><img src="img/sum5.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner6">
+                                <a data-fancybox="gallery" href="img/sum6.jpg"><img src="img/sum6.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse" id="collapseExample2" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="collapse_content">
+                        <div class="block3_wrapper">
+                            <div class="block3_wrapper_inner block3_wrapper_inner1">
+                                <a data-fancybox="gallery1" href="img/snow1.jpg"><img src="img/snow1.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner2">
+                                <a data-fancybox="gallery1" href="img/snow2.jpg"><img src="img/snow2.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner3">
+                                <a data-fancybox="gallery1" href="img/snow3.jpg"><img src="img/snow3.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner4">
+                                <a data-fancybox="gallery1" href="img/snow4.jpg"><img src="img/snow4.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner5">
+                                <a data-fancybox="gallery1" href="img/snow5.jpg"><img src="img/snow5.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner6">
+                                <a data-fancybox="gallery1" href="img/snow6.jpg"><img src="img/snow6.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse" id="collapseExample3" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="collapse_content">
+                        <div class="block3_wrapper">
+                            <div class="block3_wrapper_inner block3_wrapper_inner1">
+                                <a data-fancybox="gallery3" href="img/auto1.jpg"><img src="img/auto1.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner2">
+                                <a data-fancybox="gallery3" href="img/auto2.jpg"><img src="img/auto2.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner3">
+                                <a data-fancybox="gallery3" href="img/auto3.jpg"><img src="img/auto3.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner4">
+                                <a data-fancybox="gallery3" href="img/auto4.jpg"><img src="img/auto4.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner5">
+                                <a data-fancybox="gallery3" href="img/auto5.jpg"><img src="img/auto5.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner6">
+                                <a data-fancybox="gallery3" href="img/auto6.jpg"><img src="img/auto6.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse" id="collapseExample4" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="collapse_content">
+                        <div class="block3_wrapper">
+                            <div class="block3_wrapper_inner block3_wrapper_inner1">
+                                <a data-fancybox="gallery4" href="img/spring1.jpg"><img src="img/spring1.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner2">
+                                <a data-fancybox="gallery4" href="img/spring2.jpg"><img src="img/spring2.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner3">
+                                <a data-fancybox="gallery4" href="img/spring3.jpg"><img src="img/spring3.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner4">
+                                <a data-fancybox="gallery4" href="img/spring4.jpg"><img src="img/spring4.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner5">
+                                <a data-fancybox="gallery4" href="img/spring5.jpg"><img src="img/spring5.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner6">
+                                <a data-fancybox="gallery4" href="img/spring6.jpg"><img src="img/spring6.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse" id="collapseExample5" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="collapse_content">
+                        <div class="block3_wrapper">
+                            <div class="block3_wrapper_inner block3_wrapper_inner1">
+                                <a data-fancybox="gallery5" href="img/fancy1.jpg"><img src="img/fancy1.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner2">
+                                <a data-fancybox="gallery5" href="img/fancy2.jpg"><img src="img/fancy2.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner3">
+                                <a data-fancybox="gallery5" href="img/fancy3.jpg"><img src="img/fancy3.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner4">
+                                <a data-fancybox="gallery5" href="img/fancy4.jpg"><img src="img/fancy4.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner5">
+                                <a data-fancybox="gallery5" href="img/fancy5.jpg"><img src="img/fancy5.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner6">
+                                <a data-fancybox="gallery5" href="img/fancy6.jpg"><img src="img/fancy6.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collapse" id="collapseExample6" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="collapse_content">
+                        <div class="block3_wrapper">
+                            <div class="block3_wrapper_inner block3_wrapper_inner1">
+                                <a data-fancybox="gallery6" href="img/fav1.webp"><img src="img/fav1.webp"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner2">
+                                <a data-fancybox="gallery6" href="img/fav2.jpg"><img src="img/fav2.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner3">
+                                <a data-fancybox="gallery6" href="img/fav3.jpg"><img src="img/fav3.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner4">
+                                <a data-fancybox="gallery6" href="img/fav4.jpg"><img src="img/fav4.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner5">
+                                <a data-fancybox="gallery6" href="img/fav5.jpg"><img src="img/fav5.jpg"></a>
+                            </div>
+                            <div class="block3_wrapper_inner block3_wrapper_inner6">
+                                <a data-fancybox="gallery6" href="img/fav6.jpg"><img src="img/fav6.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+
+        <section class="main_block4" id="block4">
+            <div class="block1_title">
+                <h4 data-aos="fade-up">Services</h4>
+                <p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, deleniti.</p>
+            </div>
+
+            <div class="block4_inside">
+                <div class="block4_inner" data-aos="zoom-out-up" data-aos-delay="200">
+                    <div class="block4_wrapper">
+                        <div class="front">
+                            <img src="img/tourist.png" alt="">
+                        </div>
+                        <div class="back">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim mollitia inventore quisquam in error laudantium dolorem impedit, sapiente commodi totam eum reprehenderit obcaecati animi expedita debitis distinctio repudiandae quaerat!</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block4_inner" data-aos="zoom-out-up"  data-aos-delay="400">
+                    <div class="block4_wrapper">
+                        <div class="front">
+                            <img src="img/graphic-designer.png" alt="">
+                        </div>
+                        <div class="back">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim mollitia inventore quisquam in error laudantium dolorem impedit, sapiente commodi totam eum reprehenderit obcaecati animi expedita debitis distinctio repudiandae quaerat!</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block4_inside">
+                <div class="block4_inner" data-aos="zoom-out-up"  data-aos-delay="600">
+                    <div class="block4_wrapper">
+                        <div class="front">
+                            <img src="img/developer.png" alt="">
+                        </div>
+                        <div class="back">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim mollitia inventore quisquam in error laudantium dolorem impedit, sapiente commodi totam eum reprehenderit obcaecati animi expedita debitis distinctio repudiandae quaerat!</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block4_inner" data-aos="zoom-out-up"  data-aos-delay="800">
+                    <div class="block4_wrapper">
+                        <div class="front">
+                            <img src="img/teacher.png" alt="">
+                        </div>
+                        <div class="back">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim mollitia inventore quisquam in error laudantium dolorem impedit, sapiente commodi totam eum reprehenderit obcaecati animi expedita debitis distinctio repudiandae quaerat!</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_block5">
+            <div class="block1_title">
+                <h4 data-aos="fade-up">Contact</h4>
+                <p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, deleniti.</p>
+            </div>
+
+            <div class="block5_inside" id="block5">
+                <div class="block5_container">
+                    <div class="block5_inner block5_inner1" data-aos="zoom-out-right">
+                        <h4>Get in Touch</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eum ipsa facilis nulla modi optio corrupti quia dolores molestiae at labore, id facere? Eos ullam sunt, ea accusantium sint provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maiores ex corporis adipisci quas nostrum consequatur repudiandae quos nihil sunt natus facere optio quo ipsum fugiat, perferendis iusto voluptas! Ad!</p>
+                        <div class="block5_link">
+                            <span class="block5_span block5_span1">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a class="change1" href="#"><i class="fab fa-github"></i></a>
+                            </span>
+
+                            <span class="block5_span block5_span2">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a class="change1" href="#"><i class="fab fa-youtube"></i></a>
+                            </span>
+
+                            <span class="block5_span block5_span3">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="change1" href="#"><i class="fab fa-twitter"></i></a>
+                            </span>
+
+                            <span class="block5_span block5_span4">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a class="change1" href="#"><i class="fab fa-instagram"></i></a>
+                            </span>
+
+                            <span class="block5_span block5_span5">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="change1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="block5_inner block5_inner2" data-aos="zoom-out-left">
+                        <form action="address">
+                            <input placeholder="Your name" type="text" name="text">
+                            <input placeholder="Your email" type="email" name="email">
+                            <textarea placeholder="Your message" name="feedback" cols="30" rows="10"></textarea>
+                            <button type="submit">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>     
+
+    <footer>
+        <div class="footer_container">
+            <h4 data-aos="fade-up">Stay tuned</h4>
+            <p data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perferendis nisi <a href="#">lorem ipsum</a> sunt tempore, voluptas laborum!</p>
+        </div>
+    </footer>       
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
