@@ -668,7 +668,6 @@ header:hover .header_container{
     border: 5px solid rgb(71, 71, 71);
 }
 
-
 .block3_wrapper_inner:hover a img{
     transform: scale(1.1);
 }
@@ -2013,6 +2012,10 @@ footer{
 
 @media screen and (max-width:500px){
 
+    .header_container{
+        background: url('../img/header_banner-min.jpg') center / cover;
+    }
+
     .header_title h1 span{
         right: 100px;
         top: 55px;
@@ -2252,10 +2255,15 @@ footer{
 
     .block3_wrapper{
         grid-template: repeat(6, 270px) / repeat(1 , 1fr);
+        width: 100%;
     }
 }
 
 @media screen and (max-width:415px){
+
+    .middle a{
+        width: 100%;
+    }
 
     .header_title h1 span{
         right: 65px;
@@ -2343,5 +2351,9 @@ footer{
 
     .block5_link span a i{
         font-size: 31px;
+    }
+
+    footer{
+        height: 370px;
     }
 }
